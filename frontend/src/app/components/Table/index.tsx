@@ -35,6 +35,7 @@ export class Table extends Component<Table.Props, Table.State> {
       typingTimeout: 0,
       searchText: '',
       showActiveEmployees: true,
+      data: [{"displayName" : "modani", "firstName": "mo", "middleName" : "da","lastName": "ni", "gender": "male","startDate":"12/03/2022","companyEmail": "nimd1@fpt.com"}]
     };
   }
 

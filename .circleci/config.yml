@@ -89,8 +89,7 @@ jobs:
             cd frontend
             npm install
             npm run test
-          
-                
+                 
   test-backend:
     docker:
       - image: circleci/node:13.8.0
@@ -419,5 +418,5 @@ workflows:
           requires: [deploy-backend, deploy-frontend]
       - cloudfront-update:
           requires: [smoke-test]
-      - cleanup:
-          requires: [cloudfront-update]
+      # - cleanup:
+      #     requires: [cloudfront-update]

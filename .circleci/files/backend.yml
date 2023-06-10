@@ -22,7 +22,6 @@ Resources:
           ToPort: 3030
           CidrIp: 0.0.0.0/0
 
-
   EC2Instance:
     Type: AWS::EC2::Instance
     Properties:
@@ -36,3 +35,4 @@ Resources:
       Tags:
         - Key: Name
           Value: !Sub backend-${ID}
+          
